@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Image Gallery</h1>
+        <p>Explore beautiful moments through photography</p>
+    </header>
+
+    <section class="gallery-section">
+        <h2>Image Gallery</h2>
+
+        <div class="gallery">
+            <img src="https://picsum.photos/id/1015/600/400" onclick="enlargeImage(this)" alt="Mountain">
+            <img src="https://picsum.photos/id/1016/600/400" onclick="enlargeImage(this)" alt="Nature">
+            <img src="https://picsum.photos/id/1025/600/400" onclick="enlargeImage(this)" alt="Dog">
+            <img src="https://picsum.photos/id/1035/600/400" onclick="enlargeImage(this)" alt="Forest">
+            <img src="https://picsum.photos/id/1043/600/400" onclick="enlargeImage(this)" alt="Landscape">
+            <img src="https://picsum.photos/id/1050/600/400" onclick="enlargeImage(this)" alt="River">
+        </div>
+    </section>
+
+    <div id="imageModal" class="modal" onclick="closeImage()">
+        <span class="close">&times;</span>
+        <img id="largeImage" alt="Enlarged gallery image">
+    </div>
+
+    <section class="slideshow-section">
+        <h2>Automatic Image Slideshow</h2>
+
+        <div class="slideshow">
+            <img id="slideImage"
+                 src="https://picsum.photos/id/1015/900/500"
+                 alt="Slideshow image">
+        </div>
+    </section>
+
+    <footer>
+        <p>Created as part of Cognifyz Internship</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
